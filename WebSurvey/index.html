@@ -1,0 +1,64 @@
+<DOCTYPE html>
+    <html charset="UTF-8">
+      <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey App</title>
+      </head>
+      <body>
+        <div id="heading">
+          <h1 id="title">Survey App</h1>
+          <p id="description">Take a free survey here!</p>
+        </div>
+  
+        <form id="survey-form">
+          <label id="name-label" for="name">Name: 
+            <input id="name" type="text" required placeholder="Enter name here">
+          </label>
+           <label id="email-label" for="email">Email: 
+            <input id="email" type="email" required placeholder="Enter email here">
+          </label>
+          <label id="number-label" for="number">Number: 
+            <input id="number" type="number" min="0" max="10" placeholder="Enter number here:">
+          </label>
+  
+          <label id="dropdown-label" for="dropdown">Pick something: 
+            <select id="dropdown">
+              <option value="a">A</option>
+              <option value="b">B</option>
+              <option value="c">C</option>
+            </select>
+          </label>
+  
+          <label>
+            <input value="true" name="truefalse" type="radio">
+            True:
+          </label>
+          <label>
+            <input value="false" name="truefalse" type="radio">
+            False:
+          </label>
+  
+          <label>How did you hear about us:
+            <label>
+              <input value="G" type="checkbox">
+              Google:
+            </label>
+            <label>
+              <input value="L" type="checkbox">
+              LinkedIn:
+            </label>
+            <label>
+              <input value="F" type="checkbox">
+              Facebook:
+            </label>   
+          </label>
+  
+          <label>Comments:
+            <textarea type="textarea" placeholder="Enter comments here">
+            </textarea>
+          </label>
+  
+        <input id="submit" type="submit">
+        </form>
+      </body>
+    </html>
